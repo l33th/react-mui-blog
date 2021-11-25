@@ -11,13 +11,28 @@ function App() {
 			<header className='App-header'>
 				<h1>React MUI Blog</h1>
 				<Stack spacing={2} direction='row'>
-					<Button variant='contained' size='large' startIcon={<SendIcon />}>
+					<Button
+						style={{ backgroundColor: 'green' }}
+						variant='contained'
+						size='large'
+						startIcon={<SendIcon />}
+					>
 						Send
 					</Button>
-					<Button variant='outlined' size='large' startIcon={<CommentIcon />}>
+					<Button
+						style={{ color: 'white', borderColor: 'white' }}
+						variant='outlined'
+						size='large'
+						startIcon={<CommentIcon />}
+					>
 						Comment
 					</Button>
-					<Button variant='contained' size='large' startIcon={<ThumbUpIcon />}>
+					<Button
+						style={{ backgroundColor: 'green' }}
+						variant='contained'
+						size='large'
+						startIcon={<ThumbUpIcon />}
+					>
 						Like
 					</Button>
 				</Stack>
