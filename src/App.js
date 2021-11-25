@@ -3,6 +3,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import CommentIcon from '@mui/icons-material/Comment';
 
 function App() {
 	return (
@@ -13,7 +14,10 @@ function App() {
 					<Button variant='contained' size='large' startIcon={<SendIcon />}>
 						Send
 					</Button>
-					<Button variant='outlined' size='large' startIcon={<ThumbUpIcon />}>
+					<Button variant='outlined' size='large' startIcon={<CommentIcon />}>
+						Comment
+					</Button>
+					<Button variant='contained' size='large' startIcon={<ThumbUpIcon />}>
 						Like
 					</Button>
 				</Stack>
