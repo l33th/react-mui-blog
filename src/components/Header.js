@@ -16,6 +16,13 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
+  tagline: {
+    fontSize: 20,
+    textTransform: 'uppercase',
+    justifyContent: 'center',
+    textAlign: 'center',
+    fontFamily: 'Montserrat',
+  },
 }));
 
 const Header = () => {
@@ -41,7 +48,9 @@ const Header = () => {
       </Toolbar>
       <Divider />
       <Toolbar className={classes.tagline}>
-        Don't learn to hack, hack to learn. Hack the planet.
+        <h3>
+          Don't learn to hack, hack to learn. <br /> Hack the planet.
+        </h3>
       </Toolbar>
     </>
   );
