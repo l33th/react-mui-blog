@@ -12,9 +12,9 @@ function App() {
 					<Button variant='contained' size='large' startIcon={<SendIcon />}>
 						Send
 					</Button>
-					{/* <Button variant='outlined' size='large'>
+					<Button variant='outlined' size='large'>
 						Like
-					</Button> */}
+					</Button>
 				</Stack>
 			</header>
 		</div>
