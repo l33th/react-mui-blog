@@ -1,30 +1,50 @@
 import React from 'react';
-import { Badge, Divider, IconButton, Toolbar, Typography } from '@mui/material';
+import {
+  Badge,
+  Divider,
+  IconButton,
+  // makeStyles,
+  Toolbar,
+  Typography,
+} from '@mui/material';
+import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
+const useStyles = makeStyles(theme => ({
+  title: {
+    flexGrow: 1,
+  },
+}));
+
 const Header = () => {
-	return (
-		<>
-			<Toolbar>
-				<IconButton color='inherit'>
-					<MenuIcon />
-				</IconButton>
-				<Typography variant='h5'>Eleet Developer Hackathon</Typography>
-				<IconButton color='inherit'>
-					<Badge badgeContent={7} color='secondary'>
-						<NotificationsIcon />
-					</Badge>
-				</IconButton>
-				<IconButton color='inherit'>
-					<AccountCircleIcon />
-				</IconButton>
-			</Toolbar>
-			<Divider />
-			<Toolbar>Hack the planet.</Toolbar>
-		</>
-	);
+  const classes = useStyles();
+
+  return (
+    <>
+      <Toolbar>
+        <IconButton color="inherit">
+          <MenuIcon />
+        </IconButton>
+        <Typography variant="h5" className={classes.title}>
+          Eleet Developer Hackathon
+        </Typography>
+        <IconButton color="inherit">
+          <Badge badgeContent={7} color="secondary">
+            <NotificationsIcon />
+          </Badge>
+        </IconButton>
+        <IconButton color="inherit">
+          <AccountCircleIcon />
+        </IconButton>
+      </Toolbar>
+      <Divider />
+      <Toolbar className={classes.tagline}>
+        Don't learn to hack, hack to learn. Hack the planet.
+      </Toolbar>
+    </>
+  );
 };
 
 export default Header;
