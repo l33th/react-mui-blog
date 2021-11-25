@@ -1,10 +1,13 @@
+import { Divider, Toolbar } from '@mui/material';
 import React from 'react';
 
 const Header = () => {
 	return (
-		<div>
-			<h1>Header</h1>
-		</div>
+		<>
+			<Toolbar>Toolbar</Toolbar>
+			<Divider />
+			<Toolbar>Hack the planet.</Toolbar>
+		</>
 	);
 };
 
