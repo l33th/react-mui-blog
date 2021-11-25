@@ -8,16 +8,16 @@ const Header = () => {
 	return (
 		<>
 			<Toolbar>
-				<IconButton>
+				<IconButton color='inherit'>
 					<MenuIcon />
 				</IconButton>
 				<Typography variant='h5'>Eleet Developer Hackathon</Typography>
-				<IconButton>
+				<IconButton color='inherit'>
 					<Badge badgeContent={7} color='secondary'>
 						<NotificationsIcon />
 					</Badge>
 				</IconButton>
-				<IconButton>
+				<IconButton color='inherit'>
 					<AccountCircleIcon />
 				</IconButton>
 			</Toolbar>
