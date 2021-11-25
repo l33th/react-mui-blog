@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, IconButton, Toolbar, Typography } from '@mui/material';
+import { Badge, Divider, IconButton, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -13,7 +13,9 @@ const Header = () => {
 				</IconButton>
 				<Typography variant='h5'>Eleet Developer Hackathon</Typography>
 				<IconButton>
-					<NotificationsIcon />
+					<Badge badgeContent={7} color='secondary'>
+						<NotificationsIcon />
+					</Badge>
 				</IconButton>
 				<IconButton>
 					<AccountCircleIcon />
