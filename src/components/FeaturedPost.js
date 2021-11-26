@@ -13,6 +13,11 @@ const useStyles = makeStyles({
     fontSize: 40,
     fontFamily: 'Montsarat',
   },
+  cover: {
+    backgroundImage: `url(http://wallpapercave.com/wp/lBdslie.jpg)`,
+    backgroundPosition: 'center',
+    padding: '35px 25px',
+  },
 });
 
 const FeaturedPost = () => {
@@ -32,7 +37,7 @@ const FeaturedPost = () => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button>Read More</Button>
+          <Button variant="text">Read More</Button>
         </CardActions>
       </Card>
     </>
