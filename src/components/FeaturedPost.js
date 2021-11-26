@@ -1,4 +1,10 @@
-import { Card, CardContent, Typography } from '@mui/material';
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Typography,
+} from '@mui/material';
 import React from 'react';
 
 const FeaturedPost = () => {
@@ -14,6 +20,9 @@ const FeaturedPost = () => {
             accusantium ullam corporis.
           </Typography>
         </CardContent>
+        <CardActions>
+          <Button>Read More</Button>
+        </CardActions>
       </Card>
     </>
   );
