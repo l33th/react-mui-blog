@@ -3,13 +3,13 @@ import {
   Card,
   CardActions,
   CardContent,
+  makeStyles,
   Typography,
-} from '@mui/material';
-import React from 'react';
-import { makeStyles } from '@material-ui/styles';
+} from '@material-ui/core';
 
 const useStyles = makeStyles({
   title: {
+    color: 'white',
     fontSize: 40,
     fontFamily: 'Montsarat',
   },
@@ -27,18 +27,15 @@ const FeaturedPost = () => {
       <Card className={classes.cover}>
         <CardContent className={classes.textContainer}>
           <Typography className={classes.title} gutterBottom>
-            This is a long title for the featured post.
+            Title of a longer featured blog post
           </Typography>
-          <Typography variant="h5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-            asperiores omnis unde alias quod? Maxime nisi laborum esse qui
-            dolore dolores quae asperiores sequi perspiciatis nobis, reiciendis
-            accusantium ullam corporis.
+          <Typography variant="h5" component="h2" style={{ color: 'white' }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, libero. Rem, et. Quibusdam animi porro voluptatum velit perspiciatis mollitia labore vel sunt incidunt maxime vero error est, iusto inventore nihil.
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="text" className={classes.btn}>
-            Read More
+          <Button variant="text" style={{ color: '#90caf9', fontWeight: 700 }}>
+            Read More..
           </Button>
         </CardActions>
       </Card>

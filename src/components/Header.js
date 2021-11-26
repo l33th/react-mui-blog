@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   tagline: {
+    color: 'white',
     fontSize: 20,
     textTransform: 'uppercase',
     justifyContent: 'center',
