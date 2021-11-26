@@ -1,6 +1,9 @@
-import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
+// import GitHubIcon from '@material-ui/icons/GitHub';
+// import FacebookIcon from '@material-ui/icons/Facebook';
+// import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export const sections = [
   { title: 'Technology', url: '#' },

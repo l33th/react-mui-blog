@@ -1,7 +1,9 @@
 import './App.css';
 import { Container, createTheme, Grid, ThemeProvider } from '@mui/material';
+import { featuredPosts } from './data/Data';
 import Header from './components/Header';
 import FeaturedPost from './components/FeaturedPost';
+import PostCard from './components/PostCard';
 
 function App() {
   // dark theme
@@ -18,7 +20,11 @@ function App() {
           <Header />
           <FeaturedPost />
           <br />
-          <Grid></Grid>
+          <Grid>
+            {featuredPosts.map(post => (
+              <PostCard post={post} key={post.title} />
+            ))}
+          </Grid>
         </Container>
       </ThemeProvider>
     </>
