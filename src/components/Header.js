@@ -36,7 +36,7 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h5" className={classes.title}>
-          Eleet Developer Hackathon
+          Eleet Programmers
         </Typography>
         <IconButton color="inherit">
           <Badge badgeContent={7} color="secondary">
