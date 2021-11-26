@@ -1,11 +1,16 @@
-import React from 'react'
+import { Card, CardContent, Typography } from '@mui/material';
+import React from 'react';
 
 const FeaturedPost = () => {
   return (
-    <div>
-      <h1>Featured Post</h1>
-    </div>
-  )
-}
+    <>
+      <Card>
+        <CardContent>
+          <Typography>This is a long title for the featured post.</Typography>
+        </CardContent>
+      </Card>
+    </>
+  );
+};
 
-export default FeaturedPost
+export default FeaturedPost;
