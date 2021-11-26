@@ -26,7 +26,7 @@ const FeaturedPost = () => {
     <>
       <Card className={classes.cover}>
         <CardContent className={classes.textContainer}>
-          <Typography className={classes.title}>
+          <Typography className={classes.title} gutterBottom>
             This is a long title for the featured post.
           </Typography>
           <Typography variant="h5">
@@ -37,7 +37,9 @@ const FeaturedPost = () => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="text">Read More</Button>
+          <Button variant="text" className={classes.btn}>
+            Read More
+          </Button>
         </CardActions>
       </Card>
     </>
