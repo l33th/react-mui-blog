@@ -1,11 +1,10 @@
 import './App.css';
-import { Container, createTheme } from '@mui/material';
+import { Container, createTheme, Grid, ThemeProvider } from '@mui/material';
 import Header from './components/Header';
-import { ThemeProvider } from '@emotion/react';
 import FeaturedPost from './components/FeaturedPost';
 
 function App() {
-	// dark theme
+  // dark theme
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
@@ -17,7 +16,9 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <Container>
           <Header />
-					<FeaturedPost />
+          <FeaturedPost />
+          <br />
+          <Grid></Grid>
         </Container>
       </ThemeProvider>
     </>
