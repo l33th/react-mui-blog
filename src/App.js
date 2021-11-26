@@ -1,15 +1,24 @@
 import './App.css';
-import { Container } from '@mui/material';
+import { Container, createTheme } from '@mui/material';
 import Header from './components/Header';
+import { ThemeProvider } from '@emotion/react';
 
 function App() {
-	return (
-		<>
-			<Container>
-				<Header />
-			</Container>
-		</>
-	);
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
+
+  return (
+    <>
+      <ThemeProvider theme={darkTheme}>
+        <Container>
+          <Header />
+        </Container>
+      </ThemeProvider>
+    </>
+  );
 }
 
 export default App;

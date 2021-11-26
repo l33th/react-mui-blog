@@ -49,7 +49,7 @@ const Header = () => {
       <Divider />
       <Toolbar className={classes.tagline}>
         <h3>
-          Don't learn to hack, hack to learn. <br /> Hack the planet.
+          Build scalable cross platform applications. <br /> Build the future.
         </h3>
       </Toolbar>
     </>
