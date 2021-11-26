@@ -2,6 +2,7 @@ import './App.css';
 import { Container, createTheme } from '@mui/material';
 import Header from './components/Header';
 import { ThemeProvider } from '@emotion/react';
+import FeaturedPost from './components/FeaturedPost';
 
 function App() {
   const darkTheme = createTheme({
@@ -15,6 +16,7 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <Container>
           <Header />
+					<FeaturedPost />
         </Container>
       </ThemeProvider>
     </>
