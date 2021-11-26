@@ -6,13 +6,24 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles({
+  title: {
+    fontSize: 40,
+    fontFamily: 'Montsarat',
+  },
+});
 
 const FeaturedPost = () => {
+  const classes = useStyles();
   return (
     <>
-      <Card>
-        <CardContent>
-          <Typography>This is a long title for the featured post.</Typography>
+      <Card className={classes.cover}>
+        <CardContent className={classes.textContainer}>
+          <Typography className={classes.title}>
+            This is a long title for the featured post.
+          </Typography>
           <Typography variant="h5">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
             asperiores omnis unde alias quod? Maxime nisi laborum esse qui

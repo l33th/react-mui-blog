@@ -5,6 +5,7 @@ import { ThemeProvider } from '@emotion/react';
 import FeaturedPost from './components/FeaturedPost';
 
 function App() {
+	// dark theme
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
