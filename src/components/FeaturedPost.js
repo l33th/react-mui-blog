@@ -27,10 +27,13 @@ const FeaturedPost = () => {
       <Card className={classes.cover}>
         <CardContent className={classes.textContainer}>
           <Typography className={classes.title} gutterBottom>
-            Title of a longer featured blog post
+            Using technology to create a better world
           </Typography>
           <Typography variant="h5" component="h2" style={{ color: 'white' }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, libero. Rem, et. Quibusdam animi porro voluptatum velit perspiciatis mollitia labore vel sunt incidunt maxime vero error est, iusto inventore nihil.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+            libero. Rem, et. Quibusdam animi porro voluptatum velit perspiciatis
+            mollitia labore vel sunt incidunt maxime vero error est, iusto
+            inventore nihil.
           </Typography>
         </CardContent>
         <CardActions>
