@@ -8,7 +8,17 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
 
-const useStyles = makeStyles({});
+const useStyles = makeStyles({
+  card: {
+    display: 'flex',
+  },
+  cardDetails: {
+    flex: 1,
+  },
+  cardMedia: {
+    width: 160,
+  },
+});
 
 const PostCard = ({ post }) => {
   const classes = useStyles();
@@ -33,6 +43,14 @@ const PostCard = ({ post }) => {
                 </Typography>
               </CardContent>
             </div>
+
+            <Hidden xsDom>
+              <CardMedia
+                className={classes.cardMedia}
+                image={post.image}
+                title={post.imageTitle}
+              />
+            </Hidden>
             <Hidden xsDown>
               <CardMedia
                 className={classes.cardMedia}
