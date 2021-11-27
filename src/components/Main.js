@@ -1,5 +1,7 @@
 import { Divider, Grid, Typography } from '@mui/material';
+import Markdown from 'markdown-to-jsx';
 import React from 'react';
+import { posts } from '../data/Data';
 
 const Main = ({ title }) => {
   return (
@@ -8,6 +10,9 @@ const Main = ({ title }) => {
         {title}
       </Typography>
       <Divider />
+      {posts.map(post => (
+        <Markdown key={post.body}>{post.body}</Markdown>
+      ))}
     </Grid>
   );
 };
