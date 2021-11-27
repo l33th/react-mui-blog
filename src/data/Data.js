@@ -2,6 +2,7 @@
 // import FacebookIcon from '@material-ui/icons/Facebook';
 // import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -130,6 +131,7 @@ export const sidebar = {
   social: [
     { name: 'GitHub', icon: GitHubIcon },
     { name: 'Twitter', icon: TwitterIcon },
+    { name: 'Whatsapp', icon: WhatsAppIcon },
     { name: 'Facebook', icon: FacebookIcon },
   ],
 };

@@ -14,6 +14,7 @@ const useStyles = makeStyles({
     fontFamily: 'Montsarat',
   },
   cover: {
+    color: 'lightgray',
     backgroundImage: `url(http://wallpapercave.com/wp/lBdslie.jpg)`,
     backgroundPosition: 'center',
     padding: '35px 25px',
@@ -29,7 +30,7 @@ const FeaturedPost = () => {
           <Typography className={classes.title} gutterBottom>
             Using technology to create a better world
           </Typography>
-          <Typography variant="h5" component="h2" style={{ color: 'white' }}>
+          <Typography variant="h5" component="h2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
             libero. Rem, et. Quibusdam animi porro voluptatum velit perspiciatis
             mollitia labore vel sunt incidunt maxime vero error est, iusto

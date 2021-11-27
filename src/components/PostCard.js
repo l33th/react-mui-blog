@@ -32,9 +32,7 @@ const PostCard = ({ post }) => {
                 <Typography component="h2" variant="h5">
                   {post.title}
                 </Typography>
-                <Typography variant="subtitle1" color="white">
-                  {post.date}
-                </Typography>
+                <Typography variant="subtitle1">{post.date}</Typography>
                 <Typography variant="subtitle1" paragraph>
                   {post.description}
                 </Typography>
