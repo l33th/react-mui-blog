@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Divider, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const Main = ({ title }) => {
@@ -7,6 +7,7 @@ const Main = ({ title }) => {
       <Typography variant="h6" gutterBottom>
         {title}
       </Typography>
+      <Divider />
     </Grid>
   );
 };
