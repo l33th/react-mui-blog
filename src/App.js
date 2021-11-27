@@ -20,7 +20,7 @@ function App() {
           <Header />
           <FeaturedPost />
           <br />
-          <Grid>
+          <Grid container>
             {featuredPosts.map(post => (
               <PostCard post={post} key={post.title} />
             ))}
