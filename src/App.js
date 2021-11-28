@@ -7,6 +7,7 @@ import PostCard from './components/PostCard';
 import Main from './components/Main';
 import Sidebar from './components/Sidebar';
 import { makeStyles } from '@material-ui/core/styles';
+import Footer from './components/Footer';
 
 const useStyles = makeStyles(theme => ({
   mainGrid: {
@@ -47,6 +48,10 @@ function App() {
           </Grid>
         </Container>
       </ThemeProvider>
+      <Footer
+        title="WM Blog MUI"
+        description="Something here to give the footer a purpose."
+      />
     </>
   );
 }
