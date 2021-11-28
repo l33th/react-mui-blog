@@ -11,6 +11,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import SideDrawer from './SideDrawer';
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -32,9 +33,11 @@ const Header = () => {
   return (
     <>
       <Toolbar>
-        <IconButton color="inherit">
-          <MenuIcon />
-        </IconButton>
+        <SideDrawer>
+          <IconButton style={{ color: 'white' }}>
+            <MenuIcon />
+          </IconButton>
+        </SideDrawer>
         <Typography variant="h5" className={classes.title}>
           Eleet Programmers
         </Typography>
